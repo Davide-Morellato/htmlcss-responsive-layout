@@ -37,7 +37,7 @@ body{
     font-size: 100px;
 }
 
-.font-color{
+.font-blue{
     color:  rgb(0, 132, 253);
 }
 
@@ -47,6 +47,15 @@ body{
 
 .ta-c{
     text-align: center;
+}
+
+.font-violet{
+    color: rgb(151, 146, 228);
+}
+
+.b-radius-24{
+    border-radius: 24px;
+    color: white;
 }
 
 
@@ -135,7 +144,9 @@ body{
 
 /* SECTION STRATEGIC */
 
-.section-strategic{
+.section-strategic,
+.arrow-down,
+.b-radius-24{
     background-color: rgb(151, 146, 228);
 }
 
@@ -154,7 +165,6 @@ body{
 }
 
 .arrow-down{
-    background-color: rgb(151, 146, 228);
     width: 30px;
     aspect-ratio: 1/1;
     text-align: center;
@@ -166,17 +176,6 @@ body{
 
 /* SECTION TESTIMONIALS */
 
-
-.ta-c > h1{
-    color: rgb(151, 146, 228);
-}
-
-.bg-violet{
-    background-color: rgb(151, 146, 228);
-    border-radius: 24px;
-    color: white;
-  }
-  
   .img-testimonials{
       display: block;
       max-width: 200px;
@@ -184,9 +183,11 @@ body{
       border-radius: 50%;
       margin: 0 auto;
       object-fit: cover;
-  }
-  
-  
+} 
+
+  .section-testimonials .container-sm .row .col-12{
+    margin-bottom: 30px;
+}  
   
   
 
@@ -280,10 +281,6 @@ body{
 
     .card-phone img{
         margin: 0;
-    }
-
-    .section-testimonials .container-sm .row{
-        gap: 30px;
     }
 
     .ta-c .margin-btm-30{
