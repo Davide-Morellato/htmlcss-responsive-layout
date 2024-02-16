@@ -65,7 +65,8 @@ body{
 }
 
 .section-card,
-.section-strategic{
+.section-strategic,
+.section-testimonials{
     margin-top: 50px;
 }
 
@@ -163,11 +164,31 @@ body{
 }
 
 
+/* SECTION TESTIMONIALS */
 
 
+.ta-c > h1{
+    color: rgb(151, 146, 228);
+}
 
-
-
+.bg-violet{
+    background-color: rgb(151, 146, 228);
+    border-radius: 24px;
+    color: white;
+  }
+  
+  .img-testimonials{
+      display: block;
+      max-width: 200px;
+      aspect-ratio: 1/1;
+      border-radius: 50%;
+      margin: 0 auto;
+      object-fit: cover;
+  }
+  
+  
+  
+  
 
 /* MEDIA QUERY */
 
@@ -247,7 +268,8 @@ body{
         margin-bottom: 0;
     }
 
-    .flex-w{
+    .flex-w,
+    .ai-c{
         align-items: center;
     }
 
@@ -258,6 +280,18 @@ body{
 
     .card-phone img{
         margin: 0;
+    }
+
+    .section-testimonials .container-sm .row{
+        gap: 30px;
+    }
+
+    .ta-c .margin-btm-30{
+        margin-bottom: 30px;
+    }
+
+    .card-description .ta-c{
+        text-align: left;
     }
 }
 
@@ -309,4 +343,5 @@ body{
     .pad-0-20{
         padding: 0 20px;
     }
+    
 }
