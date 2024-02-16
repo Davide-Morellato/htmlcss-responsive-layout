@@ -15,6 +15,9 @@ a{
     color: currentColor;
 }
 
+body{
+    font-family: "Roboto", sans-serif;
+}
 
 /* UTILITIES */
 
@@ -26,7 +29,7 @@ a{
     padding: 40px 20px;
 }
 
-.margin-btm{
+.margin-btm-35{
     margin-bottom: 35px;
 }
 
@@ -49,7 +52,20 @@ a{
 
 /* STRUCTURE */
 
-.section-card{
+.container{
+    max-width: 1195px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.container-sm{
+    max-width: 885px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.section-card,
+.section-strategic{
     margin-top: 50px;
 }
 
@@ -109,11 +125,43 @@ a{
     padding: 10px 30px;
 }
 
-.img-size{
+.img-size-fix{
     max-width: 250px; 
     display: block;
     margin: 0; 
 }
+
+
+/* SECTION STRATEGIC */
+
+.section-strategic{
+    background-color: rgb(151, 146, 228);
+}
+
+.img-size-100{
+    max-width: 100%;
+}
+
+.card-planning > *{
+    color: white;
+}
+
+.card-development-bg-white{
+    background-color: white;
+    border-radius: 24px;
+    text-align: center;
+}
+
+.arrow-down{
+    background-color: rgb(151, 146, 228);
+    width: 30px;
+    aspect-ratio: 1/1;
+    text-align: center;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 30px;
+}
+
 
 
 
@@ -125,7 +173,8 @@ a{
 
 
 @media screen and (min-width: 350px){
-    .container{
+    .container,
+    .container-sm{
         width: 100%;
         margin: 0 auto;
     }
@@ -137,7 +186,8 @@ a{
 
 
 @media (min-width: 768px){
-    .container{
+    .container,
+    .container-sm{
         width: 100%;
     }
         
@@ -157,15 +207,6 @@ a{
         align-items: center;
         justify-content: space-between;
     }
-        
-    .col-md-4{
-        width: calc(4 * 100% / 12)
-    }
-
-        
-    .col-md-8{
-        width: calc(8 * 100% / 12);
-    }
 
     .font-20{
         font-size: 20px;
@@ -174,6 +215,14 @@ a{
     .col-8{
         display: flex;
         flex-wrap: wrap;
+    }
+
+    .col-md-4{
+        width: calc(4 * 100% / 12)
+    }
+
+    .col-md-8{
+        width: calc(8 * 100% / 12);
     }
 
     .flex-c,
@@ -194,7 +243,7 @@ a{
         justify-content: space-evenly;
     }
 
-    .margin-btm{
+    .margin-btm-35{
         margin-bottom: 0;
     }
 
@@ -214,6 +263,11 @@ a{
 
 
 @media (min-width: 992px){
+    .container,
+    .container-sm{
+        width: 100%;
+    }
+
     .hamb-menu{
         display: none;
         
@@ -238,5 +292,22 @@ a{
     
     .card-phone img{
         margin: 0 auto;
+    }
+
+    
+    .card-development{
+        align-self: flex-end; 
+    }
+
+    .card-development-bg-white .margin-btm-35 img{
+        max-width: 50%;
+    }
+
+    .card .margin-btm-30{
+        margin-bottom: 30px;
+    }
+
+    .pad-0-20{
+        padding: 0 20px;
     }
 }
