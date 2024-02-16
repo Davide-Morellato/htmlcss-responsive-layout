@@ -212,10 +212,6 @@ body{
         font-size: 20px;
     }
 
-    .font-30{
-        font-size: 30px;
-    }
-
     .col-8{
         display: flex;
         flex-wrap: wrap;
