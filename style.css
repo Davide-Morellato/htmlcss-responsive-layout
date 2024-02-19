@@ -53,6 +53,10 @@ body{
     font-size: 50px;
 }
 
+.font-65{
+    font-size: 65px;
+}
+
 .font-100{
     font-size: 100px;
 }
@@ -203,9 +207,13 @@ body{
 
 /* SECTION ABOUT_US */
 
+.mw-200{
+    max-width: 200px;
+}
+
 .img-about{
     display: block;
-    max-width: 200px;
+    width: 100%;
     aspect-ratio: 1/1;
     border-radius: 50%;
     object-fit: cover;
@@ -221,8 +229,8 @@ body{
 
 .pos-absolute{
     position: absolute;
-    top: -23px;
-    right: 20px;
+    top: 0px;
+    right: 0px;
 }
 
 
@@ -331,9 +339,6 @@ body{
         text-align: left;
     }
     
-    .pos-absolute{
-        right: 70px;
-    }
 }
 
 
@@ -392,7 +397,4 @@ body{
         width: calc(8 * 100% / 12);
     }
     
-    .pos-absolute{
-        right: 90px;
-    }
 }
